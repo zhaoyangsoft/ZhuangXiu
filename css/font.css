@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-zfx73d');
+	src:url('../fonts/icomoon.eot?#iefix-zfx73d') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-zfx73d') format('woff'),
+		url('../fonts/icomoon.ttf?-zfx73d') format('truetype'),
+		url('../fonts/icomoon.svg?-zfx73d#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon_"], [class*=" icon_"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon_checkmark:before {
+	content: "\e600";
+}
+.icon_checkmark2:before {
+	content: "\e601";
+}
+.icon_cancel:before {
+	content: "\e602";
+}
+.icon_cancel2:before {
+	content: "\e603";
+}
+.icon_plus:before {
+	content: "\e604";
+}
+.icon_plus2:before {
+	content: "\e605";
+}
+.icon_minus:before {
+	content: "\e606";
+}
+.icon_minus2:before {
+	content: "\e607";
+}
+.icon_notice:before {
+	content: "\e608";
+}
+.icon_notice2:before {
+	content: "\e609";
+}
+.icon_angles_left:before {
+	content: "\f100";
+}
+.icon_angles_right:before {
+	content: "\f101";
+}
+.icon_angles_top:before {
+	content: "\f102";
+}
+.icon_angles_bottom:before {
+	content: "\f103";
+}
+.icon_angle_left:before {
+	content: "\f104";
+}
+.icon_angle_right:before {
+	content: "\f105";
+}
+.icon_angle_up:before {
+	content: "\f106";
+}
+.icon_angle_down:before {
+	content: "\f107";
+}
+.icon_angle_circle_left:before {
+	content: "\f137";
+}
+.icon_angle_circle_right:before {
+	content: "\f138";
+}
+.icon_angle_circle_top:before {
+	content: "\f139";
+}
+.icon_angle_circle_bottom:before {
+	content: "\f13a";
+}

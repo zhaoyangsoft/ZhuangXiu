@@ -1,1 +1,31 @@
-@charset "utf-8";
+@charset "utf-8"
+
+
+/* 首页 */
+.mian_page_01,
+.mian_page_02,
+.mian_page_03,
+.mian_page_04{
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center center;
+}
+
+
+
+
+.mian_page_01{
+	background-image: url(../images/index/bg/img_001_1920x1050.jpg);
+}
+
+.mian_page_02{
+	background-image: url(../images/index/bg/img_002_1920x1050.jpg);
+}
+
+.mian_page_03{
+	background-image: url(../images/index/bg/img_003_1920x1050.jpg);
+}
+
+.mian_page_04{
+	background-image: url(../images/index/bg/img_004_1920x1050.jpg);
+}
