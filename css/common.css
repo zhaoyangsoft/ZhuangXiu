@@ -4,4 +4,183 @@
 body{
 	font-family:Helvetica,Arial,"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",SimSun,"宋体",sans-serif;
 	font-size:62.5%;
+	color: #626262;
+
 }
+
+a:link,a:visited,a:hover,a:active{
+	text-decoration: none;
+	color: #6e6e6e;
+	cursor: pointer;
+}
+
+a:link,a:visited,a:active{
+    /*color: #fff;*/
+}
+
+/* 导航 */
+.nav_mian{
+	border-top: 1px solid #00aad2;
+	border-top: 1px solid rgba(0,170,210,0.8);
+
+	width: 100%;
+	position: fixed;
+	top: 0;
+
+	/*overflow: hidden;*/
+	z-index: 10;
+}
+
+.nav_mian .logo_wrap{
+	font-size: 1.8em;
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+
+	background-color: rgba(0,170,210,0.8);
+	background: rgba(0,170,210,0.8) url(../images/logo_whlite.png) no-repeat center center;
+	background-size: auto 100%;
+
+	width: 120px;
+	height: 60px;
+	
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin:0 auto;
+
+	z-index: 10;
+
+}
+.nav_mian .logo_wrap:hover{
+	height: 70px;
+	line-height: 70px;
+}
+
+/*.nav_mian .logo_wrap:hover .nav{
+	margin-top: -58px;
+}*/
+
+
+.nav_mian .nav{
+	/*pointer-events: none;*/
+	text-align: center;
+	margin: 0 auto;
+	background: url(../images/bg_nav_top.png) #FFFFFF;
+	background-color: transparent;
+	height: 54px;
+
+	margin-top: -58px;
+	margin-top:0;
+
+	box-shadow: 0 0 2px 0 #7e7e7e;
+
+}
+
+.nav_mian .nav .list{
+	display: inline-block;
+	+display: inline;
+	+zoom: 1;
+}
+.nav_mian .nav .list a{
+	padding:0 20px;
+	display: block;
+	line-height: 54px;
+	font-size: 1.4em;
+	/*font-weight: bold;*/
+}
+
+.nav_mian .nav .list a:hover,
+.nav_mian .nav .list .a_hover{
+	color: #fff;
+	background-color:#00aad2;
+	background-color: rgba(0,170,210,0.8);
+}
+
+
+
+
+
+/* 通用模块 */
+.wrap1200{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: visible;
+}
+
+.mod_btn{
+	display: block;
+	font-size: 1.4em;
+	/*line-height: 2em;*/
+	color: #626262;
+	padding: 10px 20px;
+	/*vertical-align:middle;*/
+}
+.mod_btn span{
+	display:inline-block;
+	+display: inline;
+	+zoom: 1;
+	/*line-height: 3em;*/
+	padding: 0 2px;
+	font-size:1em; 
+	/*line-height: 1.2em;*/
+	/*font-size:1.4em; */
+	/*margin: 10px 0 0 0;*/
+	/*height: 20px;*/
+	/*vertical-align:text-bottom;*/
+	vertical-align: middle;
+}
+.mod_btn:hover{
+	color: #00aad2;
+}
+.mod_btn:hover span{
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	transform:rotate(90deg);
+}
+.mod_btn:active span{
+	-webkit-transform:translate(0,4px) rotate(90deg);
+	-moz-transform:translate(0,4px) rotate(90deg);
+	-ms-transform:translate(0,4px) rotate(90deg);
+	-o-transform:translate(0,4px) rotate(90deg);
+	transform:translate(0,4px) rotate(90deg);
+}
+
+
+
+/* css3过渡动画 */
+.mod_btn,
+.mod_btn span,
+.nav_mian,
+.nav_mian .nav,
+.nav_mian .logo_wrap,
+.nav_mian .nav .list a{
+	-webkit-transition:all 0.4s ease-out;
+	-moz-transition:all 0.4s ease-out;
+	-ms-transition:all 0.4s ease-out;
+	-o-transition:all 0.4s ease-out;
+	transition:all 0.4s ease-out;
+}
+
+
+
+/*  
+	主题色
+	背景色
+	点睛色
+
+
+
+	高亮  00aad2
+
+
+	深灰色393939
+	正文  7e7e7e
+		  626262
+
+
+*/

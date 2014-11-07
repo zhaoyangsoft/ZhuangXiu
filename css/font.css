@@ -23,47 +23,44 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon_checkmark:before {
+.icon_pen:before {
 	content: "\e600";
 }
-.icon_checkmark2:before {
+.icon_paintcan:before {
+	content: "\f0d1";
+}
+.icon_qrcode:before {
 	content: "\e601";
 }
-.icon_cancel:before {
+.icon_checkmark:before {
 	content: "\e602";
 }
-.icon_cancel2:before {
+.icon_checkmark2:before {
 	content: "\e603";
 }
-.icon_plus:before {
+.icon_cancel:before {
 	content: "\e604";
 }
-.icon_plus2:before {
+.icon_cancel2:before {
 	content: "\e605";
 }
-.icon_minus:before {
+.icon_plus:before {
 	content: "\e606";
 }
-.icon_minus2:before {
+.icon_plus2:before {
 	content: "\e607";
 }
-.icon_notice:before {
+.icon_minus:before {
 	content: "\e608";
 }
-.icon_notice2:before {
+.icon_minus2:before {
 	content: "\e609";
 }
-.icon_angles_left:before {
-	content: "\f100";
+.icon_smiley:before {
+	content: "\e60a";
 }
-.icon_angles_right:before {
-	content: "\f101";
-}
-.icon_angles_top:before {
-	content: "\f102";
-}
-.icon_angles_bottom:before {
-	content: "\f103";
+.icon_sad:before {
+	content: "\e60b";
 }
 .icon_angle_left:before {
 	content: "\f104";
@@ -77,15 +74,24 @@
 .icon_angle_down:before {
 	content: "\f107";
 }
-.icon_angle_circle_left:before {
+.icon_chevron_circle_left:before {
 	content: "\f137";
 }
-.icon_angle_circle_right:before {
+.icon_chevron_circle_right:before {
 	content: "\f138";
 }
-.icon_angle_circle_top:before {
+.icon_chevron_circle_up:before {
 	content: "\f139";
 }
-.icon_angle_circle_bottom:before {
+.icon_chevron_circle_down:before {
 	content: "\f13a";
+}
+.icon_wechat:before {
+	content: "\f1d7";
+}
+.icon_users:before {
+	content: "\e60c";
+}
+.icon_pictures:before {
+	content: "\e60d";
 }

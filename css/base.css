@@ -101,6 +101,7 @@ a:hover{text-decoration:none;cursor:pointer}
 .mb100{margin-bottom:100px}
 .ml0{margin-left:0px}
 .ml5{margin-left:5px}
+.ml70{margin-left:70px}
 .ml10{margin-left:10px}
 .ml15{margin-left:15px}
 .ml20{margin-left:20px}
@@ -114,6 +115,7 @@ a:hover{text-decoration:none;cursor:pointer}
 .mr20{margin-right:20px}
 .mr30{margin-right:30px}
 .mr50{margin-right:50px}
+.mr70{margin-right: 70px}
 .mr100{margin-right:100px}
 
 /*CSS pdding*/
@@ -155,3 +157,14 @@ a:hover{text-decoration:none;cursor:pointer}
 .pr30{padding-right:30px}
 .pr50{padding-right:50px}
 .pr100{padding-right:100px}
+
+/* 清除 */
+.cmt{margin-top: 0}
+.cmr{margin-right: 0}
+.cmb{margin-bottom: 0}
+.cml{margin-left: 0}
+
+.cpt{padding-top: 0}
+.cpr{padding-right: 0}
+.cpb{padding-bottom: 0}
+.cpl{padding-left: 0}
