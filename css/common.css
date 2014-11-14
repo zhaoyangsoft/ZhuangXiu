@@ -112,43 +112,76 @@ a:link,a:visited,a:active{
 
 .mod_btn{
 	display: block;
-	font-size: 1.4em;
+	/*font-size: 1.4em;*/
 	/*line-height: 2em;*/
+	/*line-height: 1em;*/
 	color: #626262;
 	padding: 10px 20px;
 	/*vertical-align:middle;*/
+	overflow: hidden;
+	/*list-style-type: */
 }
 .mod_btn span{
-	display:inline-block;
-	+display: inline;
-	+zoom: 1;
-	/*line-height: 3em;*/
+	display: block;
+	float: left;
 	padding: 0 2px;
-	font-size:1em; 
-	/*line-height: 1.2em;*/
-	/*font-size:1.4em; */
-	/*margin: 10px 0 0 0;*/
-	/*height: 20px;*/
-	/*vertical-align:text-bottom;*/
-	vertical-align: middle;
+	font-size: 1.4em;
+	line-height: 18px;
 }
+.mod_btn span[class^='icon_']{
+	font-size: 18px;
+	line-height: 18px;
+}
+
 .mod_btn:hover{
 	color: #00aad2;
 }
-.mod_btn:hover span{
+.mod_btn:hover span[class^='icon_']{
 	-webkit-transform:rotate(90deg);
 	-moz-transform:rotate(90deg);
 	-ms-transform:rotate(90deg);
 	-o-transform:rotate(90deg);
 	transform:rotate(90deg);
 }
-.mod_btn:active span{
+.mod_btn:active span[class^='ico_']{
 	-webkit-transform:translate(0,4px) rotate(90deg);
 	-moz-transform:translate(0,4px) rotate(90deg);
 	-ms-transform:translate(0,4px) rotate(90deg);
 	-o-transform:translate(0,4px) rotate(90deg);
 	transform:translate(0,4px) rotate(90deg);
 }
+.ext_btn_tr{
+	float: right;
+	padding: 10px 0px 10px 20px; 
+}
+
+
+.qr_wechat{
+	cursor: pointer;
+	/*display: block;*/
+	position: relative;
+	/*overflow: visible;*/
+	width: 20px;
+	height: 20px;
+}
+.qr_wechat .qr_wechat_img{
+	width: 100px;
+	height: 100px;
+	opacity: 0;
+	left: 50px;
+	position: absolute;
+	border: 4px solid rgba(0,0,0,.6);
+}
+.qr_wechat:hover .qr_wechat_img{
+	opacity: 1;
+	left: 30px;
+}
+.qr_wechat .qr_wechat_img:hover{
+	opacity: 0;
+	cursor: default;
+	/*left: 40px;*/
+}
+
 
 
 
@@ -158,13 +191,19 @@ a:link,a:visited,a:active{
 .nav_mian,
 .nav_mian .nav,
 .nav_mian .logo_wrap,
-.nav_mian .nav .list a{
+.nav_mian .nav .list a,
+.qr_wechat,
+.qr_wechat .qr_wechat_img{
 	-webkit-transition:all 0.4s ease-out;
 	-moz-transition:all 0.4s ease-out;
 	-ms-transition:all 0.4s ease-out;
 	-o-transition:all 0.4s ease-out;
 	transition:all 0.4s ease-out;
 }
+
+
+
+
 
 
 
@@ -175,12 +214,12 @@ a:link,a:visited,a:active{
 
 
 
-	高亮  00aad2
+	高亮  	00aad2
 
 
-	深灰色393939
-	正文  7e7e7e
-		  626262
+	深灰色	393939
+	正文  	7e7e7e
+		  	626262
 
 
 */

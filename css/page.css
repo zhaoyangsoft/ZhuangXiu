@@ -1,5 +1,4 @@
-@charset "utf-8";
-
+111111111111111111111111111
 
 /* 首页 */
 .mian_page_01{
@@ -21,21 +20,29 @@
 .mian_page_04{
 	background-size: cover;
 	background-position: center;
-
 }
 
 .mian_page_01 .animation_tier{
-	background: url(../images/index/bg_animation_01.png) no-repeat right 80%;
+	background: url(../images/index/bg_animation_01.png) no-repeat right 0;
 
 	/*position: absolute;*/
 	width: 977px;
 	/*height: 100%;*/
 	height: 644px;
 	position: absolute;
-	/*left: -20%;*/
+	left: -600px;
 	top: 0;
 	/*z-index: ;*/
-	display: none;
+	/*display: none;*/
+}
+.mian_page_01 .animation_tier .animation_egg{
+	background: url(../images/index/egg.png) no-repeat right 0;
+	width: 200px;
+	height:260px;
+	/*right: 0;*/
+	left: 977px;
+	position: absolute;
+	/*left: 0;*/
 }
 
 .mian_page_01 .wrap{
@@ -105,7 +112,7 @@
 }
 
 .mian_page_02 .company_mian,
-.mian_page_02 .case_mian{
+.mian_page_02 .company_mian_case{
 	/* 0 240 0 120     /1200 */
 	margin: 0 10% 0 20%;
 }
@@ -125,7 +132,8 @@
 	border: 2px solid rgba(0,170,210,0.8);
 }
 .mian_page_02 .company_mian .company_info{
-
+	width: 56%;
+	padding-left: 5%;
 }
 .mian_page_02 .company_mian .company_info .title{
 	font-size: 4em;
@@ -144,30 +152,308 @@
 }
 
 .mian_page_02 .company_mian_case{
-	width: 61.8%;
+	border-top: 1px solid #7e7e7e;
+	/*margin: 20px 0 0 0;*/
+	margin-top: 20px;
+	padding-top: 20px;
+}
+.mian_page_02 .company_mian_case .title{
+	font-size: 2em;
+	/*line-height: 2em;*/
+	width: 160px;
+	margin: 0 0px 0 0;
+}
+.mian_page_02 .company_mian_case .case_wrap{
+	margin-bottom: 10px;
+	/*  640/840 */
+	width: 80.95238095238095%;
+	overflow: hidden;
+}
+.mian_page_02 .company_mian_case .case_wrap .li{
+	float: left;
+	/*width: 160px;
+	height: 90px;*/
+	margin: 0 0 0 8px;
+	/*margin: 0 0 0 1.17647058823529%;*/
+	/*max-width: 160px;*/
+	/*width: 160px;*/
+	/*width: 23.52941176470588%;*/
+	border: 2px solid #7e7e7e;
+	border: 2px solid rgba(126,126,126,0.8);
+}
+.mian_page_02 .company_mian_case .case_wrap .li:first-child{
+	margin: 0 0 0 0;
+}
+.mian_page_02 .company_mian_case .case_wrap .li .link{
+	display: block;
+	overflow: hidden;
+	height: 90px;
+	width: 160px;
+/*	max-width: 160px;
+	min-width: 160px;*/
+	/*width: 100%;*/
+	/*border: 1px solid #7e7e7e;*/
+
+}
+.mian_page_02 .company_mian_case .case_wrap .li .link .img{
+	max-width: 160px;
+	min-width: 160px;
+	/*width: 25%;*/
+	/*height: 90px;*/
+}
+.mian_page_02 .company_mian_case .case_wrap .li:hover{
+	border: 2px solid #00aad2;
+	border: 2px solid rgba(0,170,210,0.8);
+}
+.mian_page_02 .company_mian_case .case_wrap .li .link:hover .img{
+	-webkit-transform:scale(1.04);
+	-moz-transform:scale(1.04);
+	-ms-transform:scale(1.04);
+	-o-transform:scale(1.04);
+	transform:scale(1.04);
+}
+.mian_page_02 .company_mian_case .more{
+	clear: both;
 }
 
 
-/*@media screen and (min-width:960px) and (max-width:1400px){
+
+/* 第三屏 */
+.mian_page_03{
+
+}
+.mian_page_03 .advantage{
+
+}
+.mian_page_03 .advantage .bg_link{
+	background: url(../images/index/lines.png) no-repeat center 40px;
+	height: 322px;
+	width: 600px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0 auto;
+}
+
+.mian_page_03 .advantage .advantage_wrap{
+	overflow: hidden;
+}
+.mian_page_03 .advantage .advantage_wrap .list{
+	/* 384/1200 */
+	width: 21%;
+	/*  */
+	height: 282px;
+
+	/* 216/1200 */
+	margin: 0 0 0 18%;
+	padding: 0 11% 0 0;
+	display: block;
+	float: left;
+}
+.mian_page_03 .advantage .advantage_wrap .list .more{
+	padding-left:0px;
+	margin: 20px 0 0 0; 
+}
+.mian_page_03 .advantage .advantage_wrap .list_fr{
+	text-align: right;
+	margin: 0 18% 0 0;
+	padding: 0 0 0 11%;
+}
+.mian_page_03 .advantage .advantage_wrap .list_fr .more{
+	float: right;
+	padding-right: 0px;
+	/*text-align: right;*/
+}
+.mian_page_03 .advantage .advantage_wrap .list > span[class^="icon_"]{
+	font-size: 8em;
+	color: #7e7e7e;
+	display: block;
+	/*color: #00aad2;*/
+}
+.mian_page_03 .advantage .advantage_wrap .list .title{
+	font-size: 1.8em;
+	line-height: 2em;
+}
+.mian_page_03 .advantage .advantage_wrap .list .info{
+	font-size: 1.4em;
+	line-height: 1.6em;
+}
+.mian_page_03 .advantage .advantage_wrap .list .more{
 
 }
 
-@media screen and (min-width:1500px){
+.mian_page_03 .advantage .advantage_wrap .list:hover{
+	/*color: #00aad2;*/
+}
+.mian_page_03 .advantage .advantage_wrap .list:hover > span[class^="icon_"]{
+	color: #00aad2;
+}
+
+.mian_page_03 .advantage .animation_tier,
+.mian_page_03 .advantage .animation_tier .shade,
+.mian_page_03 .advantage .animation_tier .card{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: block;
+	
+}
+.mian_page_03 .advantage .animation_tier{
+	background: url(../images/index/hand_b.png) no-repeat;
+	width: 250px;
+	height: 640px;
+	top: 120px;
+}
+.mian_page_03 .advantage .animation_tier .card{
+	background: url(../images/index/card.png) no-repeat;
+	width: 228px;
+	height: 138px;
+	top: -40px;
+	
+}
+.mian_page_03 .advantage .animation_tier .shade{
+	background: url(../images/index/thumb_b.png) no-repeat;
+	width: 250px;
+	height: 240px;
+	top: 0;
+}
+
+.mian_page_03 .advantage .animation_tier:hover{
+	-webkit-transform:translate(0,20px);
+	-moz-transform:translate(0,20px);
+	-ms-transform:translate(0,20px);
+	-o-transform:translate(0,20px);
+	transform:translate(0,20px);
+}
+
+
+
+
+/* 第四屏 */
+.mian_page_04{}
+.mian_page_04 .contact{
+	width: 80%;
+	max-width: 340px;
+	margin: 0 auto;
+	padding: 2% 5%; 
+	color: #fff;
+	background-color: rgba(0,170,210,0.9);
+	background: rgba(0,170,210,0.9);
+}
+.mian_page_04 .contact .title{
+	font-size: 3em;
+	line-height: 2em;
+}
+.mian_page_04 .contact .contact_wrap{
+
+}
+.mian_page_04 .contact .contact_wrap .list{
+	/*overflow: hidden;*/
+	font-size: 1.4em;
+	line-height: 1.5em;
+	margin: 10px 0;
+}
+.mian_page_04 .contact .contact_wrap .list .txt{
+	float: left;
+	width: 80px;
+	max-width: 28%;
+	/*min-width: 80px;*/
+	text-align: right;
+}
+.mian_page_04 .contact .contact_wrap .list .info{
+	float: left;
+	width: 260px;
+	max-width: 72%;
+	/*min-width: 320px;*/
+}
+
+
+.mian_page_04 .contact_wrap .qr_wechat .qr_wechat_img{
+	top: -30px;
+}
+
+.mian_page_04 .message_wrap{
+	width: 80%;
+	max-width: 340px;
+	padding: 0 0 0 10%;
+	margin: 10px auto 0 auto;
+	text-align: right;
+}
+.mian_page_04 .message_wrap .txt{
+	font-size: 1.4em;
+	line-height: 40px;
+}
+
+.mian_page_04 .message_wrap .btn{
+	/*padding: 0 10px;*/
+	font-size: 1.4em;
+	background: url(../images/btn_more.png) no-repeat 0 0;
+	width: 129px;
+	height: 40px;
+	display: inline-block;
+	+display: inline;
+	+zoom: 1;
+	line-height: 38px;
+	text-align: center;
+	font-size: 1.4em;
+	color: #fff;
+	-webkit-transition:text-shadow .4s ease-out;
+	-moz-transition:text-shadow .4s ease-out;
+	-ms-transition:text-shadow .4s ease-out;
+	-o-transition:text-shadow .4s ease-out;
+	transition:text-shadow .4s ease-out;
+}
+.mian_page_04 .message_wrap .btn span{
+	padding:0 0 0 4px;
+	display: inline-block;
+}
+.mian_page_04 .message_wrap .btn:hover{
+	text-shadow:0px -1px 0px #000;
+	background-position:0 -80px;
+}
+
+
+.mian_page_04 .contact:hover{
+	background-color: rgba(0,170,210,1);
+	background: rgba(0,170,210,1);
 
 }
 
-@media screen and (max-width:960px){
-	.mian_page_01 .wrap{
-		margin: 0 40%;
-	}
-}*/
 
-/*@media screen and (min-width:320px) and (max-width:900px){
-	.mian_page_01 .wrap{
-		margin: 0 20%;
-	}
-}*/
+/* 子页面头部 */
+.sub_head{
+	overflow: hidden;
+	margin:  0 0 70px 0;
+}
+.sub_head .li{
+	/*display: inline-block;
+	+display: block;
+	+zoom: 1;*/
+	float: left;
+}
+.sub_head .logo{
+	max-height: 60px;
+	/*vertical-align:text-top;*/
+}
+.sub_head .slogan{
+	font-size: 1.5em;
+	line-height: 30px; 
+	/*vertical-align:text-top;*/
+	list-style-type:circle;
+	/*list-style-position: inside;*/
+	/*padding: 0 0 0 60px;*/
+	margin: 0 0 0 60px;
+	width: 300px;
+	color: #393939;
+}
 
+
+.decorate_payment{
+	padding: 100px 0 0 0;
+}
 
 
 
@@ -200,8 +486,36 @@
 
 /* 水平状态的手机及以下 */
 @media screen and (max-width: 480px) {
+	.visible_phone {
+		display: block;
+	}
+	.hidden_phone {
+		display: none;
+	}
+	.hidden_desktop {
+		display: block;
+	}
+	.visible_desktop {
+		display: none;
+	}
+
 	.mian_page_01 .wrap{
 		margin: 0 10%;
+	}
+
+	
+	.mian_page_02 .company_mian .map{
+		width: 0%;
+		border: 0;
+	}
+	.mian_page_02 .company_mian .company_info{
+		width: 100%;
+	}
+
+	.mian_page_02 .company_mian .company_info .introduction{
+		max-height: 120px;
+		padding:0px;
+		overflow: hidden;
 	}
 }
 
@@ -237,23 +551,50 @@
 	.mian_page_01 .wrap{
 		margin: 0 20%;
 	}
+	.mian_page_02 .company_mian{
+		margin: 0 15%;
+	}
+	.mian_page_02 .company_mian .map{
+		width: 0%;
+		border: 0;
+	}
+	.mian_page_02 .company_mian .company_info{
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.mian_page_02 .company_mian .company_info .introduction{
+		max-height: 120px;
+		overflow: hidden;
+	}
 
 }
 
 /* 界于竖直平板与水平平板/桌面之间 */
-@media screen and (min-width: 768px) and (max-width: 960px) {
-	.visible-tablet {
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	.visible_tablet {
 		display: block;
 	}
-	.hidden-tablet {
+	.hidden_tablet {
 		display: none;
 	}
-	.hidden-desktop {
+	.hidden_desktop {
 		display: block;
 	}
-	.visible-desktop {
+	.visible_desktop {
 		display: none;
 	}
+
+
+	.mian_page_02 .company_mian .map{
+		width: 0%;
+		border: 0;
+	}
+	.mian_page_02 .company_mian .company_info{
+		width: 94%;
+		/*border: 0;*/
+	}
+
 }
 
 
@@ -265,7 +606,7 @@
 /* 宽桌面 */
 
 
-@media screen and (min-width:961px) and (max-width:1399px){
+@media screen and (min-width:960px) and (max-width:1399px){
 
 }
 
@@ -279,8 +620,41 @@
 .mian_page_01 .nav .list,
 .mian_page_01 .wrap,
 .mian_page_02 .company_mian,
-.mian_page_02 .company_mian .map{
-	-webkit-transition:all 0.4s ease-out;
+.mian_page_02 .company_mian .map,
+.mian_page_02 .company_info,
+.mian_page_02 .company_info .title,
+.mian_page_02 .company_info .introduction,
+.mian_page_02 .company_info .mod_btn,
+.mian_page_02 .company_info .mod_btn span
+.mian_page_02 .company_mian_case,
+.mian_page_02 .company_mian_case .title,
+.mian_page_02 .company_mian_case .case_wrap,
+.mian_page_02 .company_mian_case .case_wrap .li,
+.mian_page_02 .company_mian_case .case_wrap .li .link,
+.mian_page_02 .company_mian_case .case_wrap .li .link .img,
+.mian_page_02 .company_mian_case .case_wrap .more,
+.mian_page_02 .company_mian_case .more,
+.mian_page_03 .advantage,
+.mian_page_03 .advantage .bg_link,
+.mian_page_03 .advantage .advantage_wrap,
+.mian_page_03 .advantage .advantage_wrap .list,
+.mian_page_03 .advantage .advantage_wrap .list .more,
+.mian_page_03 .advantage .advantage_wrap .list_fr,
+.mian_page_03 .advantage .advantage_wrap .list_fr .more,
+.mian_page_03 .advantage .advantage_wrap .list > span[class^="icon_"],
+.mian_page_03 .advantage .advantage_wrap .list .title,
+.mian_page_03 .advantage .advantage_wrap .list .info,
+.mian_page_03 .advantage .animation_tier,
+.mian_page_03 .advantage .animation_tier .card,
+.mian_page_03 .advantage .animation_tier .shade,
+.mian_page_04 .contact,
+.mian_page_04 .contact .title,
+.mian_page_04 .contact .contact_wrap,
+.mian_page_04 .contact .contact_wrap .list,
+.mian_page_04 .contact .contact_wrap .list .txt,
+.mian_page_04 .contact .contact_wrap .list .info,
+.mian_page_04 .contact .message_wrap,
+.mian_page_04 .contact .message_wrap .txt{
 	-moz-transition:all 0.4s ease-out;
 	-ms-transition:all 0.4s ease-out;
 	-o-transition:all 0.4s ease-out;

@@ -19,16 +19,18 @@
 		<link rel="bookmark" href="favicon.ico" />
 		
 		<title>吴松装饰</title>
+
 		<!--[if lt IE 9 ]>
             <script src="js/hack/html5shiv.js"></script>
         <![endif]-->
        
-
 		<link rel="stylesheet" href="css/base.css">
 		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/page.css">
 		<link rel="stylesheet" href="css/font.css">
 		<link rel="stylesheet" href="css/jquery.fullPage.css" />
+		
+		<script src="http://192.168.1.106:81/con/assets/js/f5.js"></script>
 		
 	</head>
 	<body>	
@@ -38,9 +40,9 @@
             <a href="index.html"  class="logo_wrap hidden_phone"  title="吴松装饰"></a>
             <ul class="nav">
                 <li class="list"><a href="index.html">首&nbsp;&nbsp;&nbsp;页</a></li>
-                <li class="list mr100"><a href="#">公司介绍</a></li>
-                <li class="list ml100"><a href="#">优&nbsp;&nbsp;&nbsp;&nbsp;势</a></li>
-                <li class="list"><a href="#">联系我们</a></li>
+                <li class="list mr100"><a href="companyInfo.html">公司介绍</a></li>
+                <li class="list ml100"><a href="advantage.html">优&nbsp;&nbsp;&nbsp;&nbsp;势</a></li>
+                <li class="list"><a href="contact.html">联系我们</a></li>
             </ul>
         </nav>
         <!-- nav]]  --> 
@@ -56,13 +58,15 @@
             <!-- 第一屏[[ -->
             <div class="section mian_page_01">
                 <div class="wrap1200 pr">
-                   <div class="animation_tier"></div>
+                   <div class="animation_tier visible_phone">
+                       <div class="pr"><div class="animation_egg"></div></div>
+                   </div>
                    <div class="wrap">
                         <h1 class="title">装修</h1>
                         <p class="slogan">我们的宗旨是鸡蛋里挑骨头，让客户们能够体验到完美无暇的舒适感</p>
                         <div class="btn_wrap">
                             <span class="txt">装修案例</span>
-                            <a href="#" class="more ">
+                            <a href="#" class="more cpr">
                                 GO
                                 <span class="icon_chevron_circle_right"></span>
                             </a>
@@ -76,7 +80,7 @@
             <div class="section mian_page_02">
                 <div class="wrap1200 pr">
                     <div class="company_mian">
-                        <div class="map fl"></div>
+                        <div id="dituContent" class="map fl "></div>
                         
                         <div class="company_info fr">
                             <h1 class="title">吴松装饰</h1>
@@ -86,9 +90,9 @@
                                 <p>我们的宗旨是鸡蛋里挑骨头，让客户们能够体验到完美无暇的舒适感</p>
                                 <p>我们的宗旨是鸡蛋里挑骨头，让客户们能够体验到完美无暇的舒适感</p>
                             </div>
-                            <a href="#" class="mod_btn fr">
-                               <span class="icon_chevron_circle_right cpr"></span>
-                               联系我们
+                            <a href="#" class="mod_btn ext_btn_tr">
+                               <span class="icon_chevron_circle_right"></span>
+                               <span class="txt">联系我们</span>
                             </a>
                             
                         </div>
@@ -96,15 +100,17 @@
                     </div>
                     
                     <div class="company_mian_case">
-                        <h2 class="title">我的案例</h2>
-                        <ul class="case_wrap">
-                            <li class="li"><a href="" class="link"><img src="" alt="" class="img"></a></li>
-                            <li class="li"><a href="" class="link"><img src="" alt="" class="img"></a></li>
-                            <li class="li"><a href="" class="link"><img src="" alt="" class="img"></a></li>
-                            <li class="li"><a href="" class="link"><img src="" alt="" class="img"></a></li>
-                            <li class="li"><a href="" class="link"><img src="" alt="" class="img"></a></li>
+                        <h2 class="title fl">我们的案例：</h2>
+                        <ul class="case_wrap fl">
+                            <li class="li"><a href="#" class="link"><img src="images/case/img_001_1200x675.jpg" alt="" class="img"></a></li>
+                            <li class="li"><a href="#" class="link"><img src="images/case/img_002_1200x675.jpg" alt="" class="img"></a></li>
+                            <li class="li"><a href="#" class="link"><img src="images/case/img_003_1200x675.jpg" alt="" class="img"></a></li>
+                            <li class="li"><a href="#" class="link"><img src="images/case/img_004_1200x675.jpg" alt="" class="img"></a></li>
                         </ul>
-                        <a href="" class="more"></a>
+                        <a href="#" class="mod_btn ext_btn_tr more">
+                            <span class="icon_plus "></span>
+                            <span class="txt">查看更多</span>
+                        </a>
                     </div>
                     
                 </div>
@@ -115,30 +121,43 @@
             <!-- 第三屏[[ -->
             <div class="section mian_page_03">
                 <div class="wrap1200 pr advantage">
+                    <div class="bg_link"></div>
                     <ul class="advantage_wrap">
                         <li class="list">
-                            <span class="ico"></span>
-                            <h1 class="title"></h1>
-                            <p class="info"></p>
-                            <a href="" class="more">'查看更多'</a>
+                            <span class="icon_paintcan"></span>
+                            <h1 class="title">先装修后付款</h1>
+                            <p class="info visible_desktop">我们公司贯彻先装修再付款的理念，让客户觉得满意了再付款。</p>
+                            <a href="#" class="mod_btn more">
+                                <span class="icon_plus"></span>
+                                <span class="txt">查看更多</span>
+                            </a>
+                        </li>
+                        <li class="list list_fr">
+                            <span class="icon_users"></span>
+                            <h1 class="title">全员监理</h1>
+                            <p class="info visible_desktop">我们公司贯彻先装修再付款的理念，让客户觉得满意了再付款。</p>
+                            <a href="#" class="mod_btn more">
+                                <span class="icon_plus "></span>
+                                <span class="txt">查看更多</span>
+                            </a>
                         </li>
                         <li class="list">
-                            <span class="ico"></span>
-                            <h1 class="title"></h1>
-                            <p class="info"></p>
-                            <a href="" class="more">'查看更多'</a>
+                            <span class="icon_pen"></span>
+                            <h1 class="title">设计师介绍</h1>
+                            <p class="info visible_desktop">我们公司贯彻先装修再付款的理念，让客户觉得满意了再付款。</p>
+                            <a href="#" class="mod_btn more">
+                                <span class="icon_plus "></span>
+                                <span class="txt">查看更多</span>
+                            </a>
                         </li>
-                        <li class="list">
-                            <span class="ico"></span>
-                            <h1 class="title"></h1>
-                            <p class="info"></p>
-                            <a href="" class="more">'查看更多'</a>
-                        </li>
-                        <li class="list">
-                            <span class="ico"></span>
-                            <h1 class="title"></h1>
-                            <p class="info"></p>
-                            <a href="" class="more">'查看更多'</a>
+                        <li class="list list_fr">
+                            <span class="icon_pictures"></span>
+                            <h1 class="title">装修案例</h1>
+                            <p class="info visible_desktop">我们公司贯彻先装修再付款的理念，让客户觉得满意了再付款。</p>
+                            <a href="#" class="mod_btn more">
+                                <span class="icon_plus "></span>
+                                <span class="txt">查看更多</span>
+                            </a>
                         </li>
                     </ul>
                     <div class="animation_tier">
@@ -151,38 +170,53 @@
             
             <!-- 第四屏[[ -->
             <div class="section mian_page_04">
-                <div class="wrap1200 pr">
+                <div class="wrap1200 pr ">
+                   <div class="contact">
                     <h1 class="title">联系我们</h1>
                     <ul class="contact_wrap">
                         <li class="list">
                             <span class="txt">电话：</span>
-                            <p class="info">135482146214</p>
+                            <p class="info">135482146214<br>135482146214</p>
+                            <div class="clear"></div>
                         </li>
                         <li class="list">
                             <span class="txt">联系人：</span>
                             <p class="info">王先生</p>
+                            <div class="clear"></div>
                         </li>
                         <li class="list">
                             <span class="txt">QQ：</span>
                             <p class="info">2541687151 </p>
+                            <div class="clear"></div>
                         </li>
                         <li class="list">
                             <span class="txt">微信号：</span>
-                            <p class="info">wenxuzhai</p>
+                            <p class="info">
+                                wenxuzhai
+                                <span class="icon_wechat qr_wechat ">
+<!--                                    <span class="wechat_wrap">-->
+                                        <img src="images/qr_wenxin.png" class="qr_wechat_img" alt="微信QR" title='微信'>
+<!--                                    </span>-->
+                                </span>
+                            </p>
+                            <div class="clear"></div>
                         </li>
                         <li class="list">
                             <span class="txt">电子邮箱：</span>
                             <p class="info">ghsamnx@163.com</p>
+                            <div class="clear"></div>
                         </li>
                         <li class="list">
                             <span class="txt">地址：</span>
                             <p class="info">广州市越秀区光塔路擢甲里文叙斋</p>
+                            <div class="clear"></div>
                         </li>
                     </ul>
+                   </div>
                     <div class="message_wrap">
-                        <span class="title">给我们留言</span>
-                        <a href="" class="btn">
-                            留言<span></span>
+                        <span class="txt">给我们留言</span>
+                        <a href="#" class="btn fr">
+                            留言<span class="icon_chevron_circle_right"></span>
                         </a>
                     </div>
                 </div>
@@ -208,8 +242,8 @@
         <script type="text/javascript" src="js/lib/jquery.1.10.2.min.js"></script>
         <script type="text/javascript" src="js/lib/jquery-ui-1.10.4.min.js"></script>
 	    <script type="text/javascript" src="js/lib/jquery.fullPage.min.js"></script>
-       
-        
+<!--        <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>-->
+
         <script src="js/base.js"></script>
         <script src="js/common.js"></script>
         <script src="js/page.js"></script>
@@ -219,20 +253,26 @@
                 
                 $(document).ready(function() {
                     $('#fullpage').fullpage({
-                        anchors: ['mianpPage01', 'mianpPage02', 'mianpPage03','mianpPage04'],
+                        anchors: ['index', 'companyInfo', 'advantage','contact'],
                         navigation: true,
-                        navigationPosition: 'right',
-                        navigationTooltips: ['吴松装修', '公司简介', '优&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;势','联系我们']
+                        navigationPosition: 'right'
+//                        ,
+//                        navigationTooltips: ['吴松装修', '公司简介', '优&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;势','联系我们']
 //                        ,
 //                        ,
-//                        responsive: 1000,
+//                        responsive: 320
+//                        ,
 //                        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C']
                     });
                 });
                 
+                //百度地图
+                initMap();
+                
 			}
 			init();
 		</script>
+		
 		
 		<!-- css3兼容低版本 -->
 		<!--[if lte IE 8]>
