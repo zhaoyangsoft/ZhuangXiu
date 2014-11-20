@@ -1,0 +1,1 @@
+<li> [field:description function="cn_substr(@me)'/]</li>
