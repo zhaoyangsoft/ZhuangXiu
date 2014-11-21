@@ -1,24 +1,101 @@
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
 
-<!-- 启用360浏览器的极速模式(webkit)-->
-<meta name="renderer" content="webkit">          
-<!-- 避免IE使用兼容模式 -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="Keywords" content="{dede:field.keywords/}">
+		<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}">
 
-<!-- mobile -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+        
+		{dede:include filename="head_init.htm"/}
+		
+	</head>
+	<body>	
+		
+		{dede:include filename="header.htm"/}
+       
+        <!-- head[[ -->
+        <div class="wrap1200 sub_head_pt">
+            <ul class="sub_head">
+                 <li class="li"><img src="{dede:global.cfg_templets_skin/}/images/logo.png" alt="" class="logo"></li> 
+                 <li class="li slogan">{dede:global.cfg_subtitle/}</li>
+            </ul>
+            <div class="mode_theme_wrap">
+                <div class="ofh">
+                    <span class="icon_pen ico fl"></span>
+                    <div class="wrap">
+                        <h1 class="mian_title">{dede:field.typename/}</h1>
+                        <h2 class="sub_title">与众不同的付款方式——先</h2>
+                    </div>
+                </div>
 
+                
+            </div>
+            
+            <ul class="content designer">
 
-<link rel="shortcut icon" href="favicon.ico" type="images/x-icon" />
-<link rel="bookmark" href="favicon.ico" />
+               {dede:arclist channelid='19' addfields='img,concept,name,datebirth,school,professional'}
+               <li class="designer_list">
+                   <div class="list_head">
+                        <div class="phonto_border"><img src="[field:img/]" alt="吴松" class="phonto"></div>
+                        <div class="philosophy">
+                            <h1 class="title">设计理念</h1>
+                            <div class="txt">[field:concept/]</div>
+                        </div>
+                   </div>
+                   <div class="info">
+                       <h1 class="title">
+                           <span class="bg_l"></span>
+                           <span class="bg_r"></span>
+                       </h1>
+                       <dl>
+                           <dd>
+                               <span class="sub_title">设计师：</span>
+                               <p class="txt">[field:name/]</p>
+                           </dd>
+                           <dd>
+                               <span class="sub_title">出生年月：</span>
+                               <p class="txt">[field:datebirth/]</p>
+                           </dd>
+                           <dd>
+                               <span class="sub_title">毕业院校：</span>
+                               <p class="txt">[field:school/]</p>
+                           </dd>
+                           <dd>
+                               <span class="sub_title">专业：</span>
+                               <p class="txt">[field:professional/]</p>
+                           </dd>
+                           
+                       </dl>
+                   </div>
+               </li>
+               {/dede:arclist}
+               
+               
+               
+            </ul>
+            
+        </div>
+        <!-- head]] -->
+	    
+        
+        
+        <!-- footer[[ -->
+        <footer class="footer">
+           
+        </footer>
+        <!-- footer]] -->
+        
+        
+{dede:include filename="footer.htm"/}
 
-<!--[if lt IE 9 ]>
-    <script src="{dede:global.cfg_templets_skin/}/js/hack/html5shiv.js"></script>
-<![endif]-->
-
-<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/base.css">
-<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/common.css">
-<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/page.css">
-<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/font.css">
-
-<!-- <script src="http://192.168.1.106:81/con/assets/js/f5.js"></script> -->
+<script type="text/javascript">
+  //初始化 统一入口
+  function init(){
+            
+  }
+  init();
+</script>
+</body>
+</html>

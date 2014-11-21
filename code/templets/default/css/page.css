@@ -517,6 +517,7 @@
 .monitoring .step .title{
 	font-size: 1.8em;
 	line-height: 2em;
+	font-weight: bold;
 	color: #00aad2;
 	text-align: center;
 	padding: 0 0 20px 0;
@@ -587,6 +588,28 @@
 	padding:30px; 
 }
 
+.monitoring .flow{
+
+}
+.monitoring .flow .title{
+	font-size: 1.8em;
+	line-height: 2em;
+	color: #00aad2;
+}
+.monitoring .flow .detail{
+	font-size: 1.4em;
+	line-height: 1.8em;
+
+}
+.monitoring .flow .step_img{
+	text-align: center;
+	margin: 20px 0;
+}
+
+
+.monitoring .flow .step_img .img{
+	max-width: 1200px;
+}
 
 
 /* 设计师介绍 */
@@ -594,7 +617,7 @@
 
 }
 .designer .designer_list{
-	margin: 20px 0;
+	margin: 20px 0 100px 0;
 }
 .designer .designer_list .list_head{
 	overflow: hidden;

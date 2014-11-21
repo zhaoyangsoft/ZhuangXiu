@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="Keywords" content="{dede:field.keywords/}">
+		<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}">
+
+		<title>{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+        
+		{dede:include filename="head_init.htm"/}
+		
+	</head>
+	<body>	
+		
+		{dede:include filename="header.htm"/}
+       
+        <!-- head[[ -->
+        <div class="wrap1200 sub_head_pt">
+            <ul class="sub_head">
+                 <li class="li"><img src="{dede:global.cfg_templets_skin/}/images/logo.png" alt="" class="logo"></li> 
+                 <li class="li slogan">{dede:global.cfg_subtitle/}</li>
+            </ul>
+            <div class="mode_theme_wrap">
+                <div class="ofh">
+                    <span class="icon_pen ico fl"></span>
+                    <div class="wrap">
+                        <h1 class="mian_title">{dede:field.typename/}</h1>
+                        <h2 class="sub_title">与众不同的付款方式——先</h2>
+                    </div>
+                </div>
+
+                <div class="txt_img">
+                    <div class="txt">{dede:field.content/}</div>
+                    <img src="{dede:global.cfg_templets_skin/}/images/bg_decorate_payment.png" alt="" class="img">
+                </div>
+                
+            </div>
+            
+            <ul class="content decorate_payment">
+            {dede:arclist channelid='21' addfields='body' orderby='pubdate' order='asc'}
+                <li class="list">
+                    <h1 class="title_wrap">
+                        <span class="title">[field:title/]</span>
+                        <span class="serial_num">[field:global name=autoindex/]</span>
+                    </h1>
+                    <p class="detail">[field:body/]</p>
+                </li>
+            {/dede:arclist}
+            </ul>
+
+            
+        </div>
+        <!-- head]] -->
+	    
+        
+        
+        <!-- footer[[ -->
+        <footer class="footer">
+           
+        </footer>
+        <!-- footer]] -->
+        
+        
+{dede:include filename="footer.htm"/}
+
+<script type="text/javascript">
+  //初始化 统一入口
+  function init(){
+
+  }
+  init();
+</script>
+</body>
+</html>

@@ -58,7 +58,7 @@ $cfg_tplcache_dir = '/data/tplcache';
 $cfg_makesign_cache = 'N';
 $cfg_rm_remote = 'Y';
 $cfg_arc_dellink = 'N';
-$cfg_arc_autopic = 'Y';
+$cfg_arc_autopic = 'N';
 $cfg_arc_autokeyword = 'Y';
 $cfg_title_maxlen = 60;
 $cfg_album_width = 800;
@@ -161,4 +161,5 @@ $cfg_qq = 61955365;
 $cfg_wechat = 'wenxuzhai';
 $cfg_email = 'ghsamnx@163.com';
 $cfg_site = '广州市越秀区光塔路擢甲里文叙斋';
+$cfg_subtitle = '我们的宗旨是鸡蛋里挑骨头，让客户们能够体验到完美无暇的舒适感x';
 ?>

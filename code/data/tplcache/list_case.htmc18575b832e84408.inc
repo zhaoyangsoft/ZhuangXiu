@@ -1,0 +1,42 @@
+<?php
+$z[0]=Array("field","",95,117);
+$z[0][4]['name']="keywords";
+$z[1]=Array("field","",157,215);
+$z[1][4]['name']="description";
+$z[1][4]['function']="html2text(@me)";
+$z[2]=Array("field","",230,252);
+$z[2][4]['name']="typename";
+$z[3]=Array("global","",253,279);
+$z[3][4]['name']="cfg_webname";
+$z[4]=Array("include","",301,341);
+$z[4][4]['filename']="head_init.htm";
+$z[5]=Array("include","",373,410);
+$z[5][4]['filename']="header.htm";
+$z[6]=Array("global","",567,599);
+$z[6][4]['name']="cfg_templets_skin";
+$z[7]=Array("global","",684,711);
+$z[7][4]['name']="cfg_subtitle";
+$z[8]=Array("field","",961,983);
+$z[8][4]['name']="typename";
+$z[9]=Array("type","[field:typename/]",1440,1491);
+$z[9][4]['typeid']="7";
+$z[10]=Array("type","[field:typename/]",1674,1725);
+$z[10][4]['typeid']="8";
+$z[11]=Array("type","[field:typename/]",1904,1955);
+$z[11][4]['typeid']="9";
+$z[12]=Array("arclist","\r\n                   <li class=\"list\">\r\n                      <a class=\"img_wrap\" href='[field:imgbig/]'><img  class=\"img\" src=\"[field:picname/]\" alt=\"[field:title/]\"  title='[field:title/]'></a>\r\n                       <h1 class=\"title\">[field:title/]</h1>\r\n                       <span class=\"type\">[field:typename/]</span>\r\n                   </li>\r\n               ",2108,2550);
+$z[12][4]['typeid']="7";
+$z[12][4]['channelid']="20";
+$z[12][4]['addfields']="imgbig";
+$z[13]=Array("arclist","\r\n                   <li class=\"list\">\r\n                       <a class=\"img_wrap\" href='[field:imgbig/]'><img  class=\"img\" src=\"[field:picname/]\" alt=\"[field:title/]\"  title='[field:title/]'></a>\r\n                       <h1 class=\"title\">[field:title/]</h1>\r\n                       <span class=\"type\">[field:typename/]</span>\r\n                   </li>\r\n               ",2735,3178);
+$z[13][4]['typeid']="8";
+$z[13][4]['channelid']="20";
+$z[13][4]['addfields']="imgbig";
+$z[14]=Array("arclist","\r\n                   <li class=\"list\">\r\n                       <a class=\"img_wrap\" href='[field:imgbig/]'><img  class=\"img\" src=\"[field:picname/]\" alt=\"[field:title/]\"  title='[field:title/]'></a>\r\n                       <h1 class=\"title\">[field:title/]</h1>\r\n                       <span class=\"type\">[field:typename/]</span>\r\n                   </li>\r\n               		",3306,3751);
+$z[14][4]['typeid']="9";
+$z[14][4]['channelid']="20";
+$z[14][4]['addfields']="imgbig";
+$z[15]=Array("include","",4109,4146);
+$z[15][4]['filename']="footer.htm";
+
+?>

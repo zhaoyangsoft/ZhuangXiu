@@ -1,24 +1,116 @@
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
 
-<!-- 启用360浏览器的极速模式(webkit)-->
-<meta name="renderer" content="webkit">          
-<!-- 避免IE使用兼容模式 -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="Keywords" content="{dede:field.keywords/}">
+		<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}">
 
-<!-- mobile -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+        
+		{dede:include filename="head_init.htm"/}
+		
+	</head>
+	<body>	
+		
+		{dede:include filename="header.htm"/}
+       
+        <!-- head[[ -->
+        <div class="wrap1200 sub_head_pt">
+            <ul class="sub_head">
+                 <li class="li"><img src="{dede:global.cfg_templets_skin/}/images/logo.png" alt="" class="logo"></li> 
+                 <li class="li slogan">{dede:global.cfg_subtitle/}</li>
+            </ul>
+            <div class="mode_theme_wrap">
+                <div class="ofh">
+                    <span class="icon_pen ico fl"></span>
+                    <div class="wrap">
+                        <h1 class="mian_title">{dede:field.typename/}</h1>
+                        <h2 class="sub_title">与众不同的付款方式——先</h2>
+                    </div>
+                </div>
 
+                
+            </div>
+            
+            <div class="content product">
+                <ul class="product_nav" id="productNav">
+                    <li class="list hover">
+                        <span class="nav_ico furniture"></span>
+                        <span class="title">{dede:type typeid="7"}[field:typename/]{/dede:type}</span>
+                    </li>
+                    <li class="list">
+                        <span class="nav_ico grogshop"></span>
+                        <span class="title">{dede:type typeid="8"}[field:typename/]{/dede:type}</span>
+                    </li>
+                    <li class="list">
+                        <span class="nav_ico work"></span>
+                        <span class="title">{dede:type typeid="9"}[field:typename/]{/dede:type}</span>
+                    </li>
+                </ul>
+               <ul class="product_lists furniture_list block baguetteBoxOne">
+               {dede:arclist typeid='7' channelid='20' addfields='imgbig'}
+                   <li class="list">
+                      <a class="img_wrap" href='[field:imgbig/]'><img  class="img" src="[field:picname/]" alt="[field:title/]"  title='[field:title/]'></a>
+                       <h1 class="title">[field:title/]</h1>
+                       <span class="type">[field:typename/]</span>
+                   </li>
+               {/dede:arclist}
+                   
+               </ul>
+<!--               <div class="clear"></div>-->
+               <ul class="product_lists grogshop_list baguetteBoxOne">
+                   {dede:arclist typeid='8' channelid='20' addfields='imgbig'}
+                   <li class="list">
+                       <a class="img_wrap" href='[field:imgbig/]'><img  class="img" src="[field:picname/]" alt="[field:title/]"  title='[field:title/]'></a>
+                       <h1 class="title">[field:title/]</h1>
+                       <span class="type">[field:typename/]</span>
+                   </li>
+               {/dede:arclist}
+               </ul>
+               
+               <ul class="product_lists work_list baguetteBoxOne">
+                   {dede:arclist typeid='9' channelid='20' addfields='imgbig'}
+                   <li class="list">
+                       <a class="img_wrap" href='[field:imgbig/]'><img  class="img" src="[field:picname/]" alt="[field:title/]"  title='[field:title/]'></a>
+                       <h1 class="title">[field:title/]</h1>
+                       <span class="type">[field:typename/]</span>
+                   </li>
+               		{/dede:arclist}
+               </ul>
+               
+               <div class="clear"></div>
+               
+               
+            </div>
+            
+        </div>
+        <!-- head]] -->
+	    
+        
+        
+        <!-- footer[[ -->
+        <footer class="footer">
+           
+        </footer>
+        <!-- footer]] -->
+        
+        
+{dede:include filename="footer.htm"/}
 
-<link rel="shortcut icon" href="favicon.ico" type="images/x-icon" />
-<link rel="bookmark" href="favicon.ico" />
+<script type="text/javascript">
+  //初始化 统一入口
+  function init(){
+  	//产品切换
+  	productSwitch();
 
-<!--[if lt IE 9 ]>
-    <script src="{dede:global.cfg_templets_skin/}/js/hack/html5shiv.js"></script>
-<![endif]-->
+  	//图片放大效果
+  	baguetteBox.run('.baguetteBoxOne', {
+	    animation: 'fadeIn',
+	});
 
-<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/base.css">
-<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/common.css">
-<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/page.css">
-<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/font.css">
-
-<!-- <script src="http://192.168.1.106:81/con/assets/js/f5.js"></script> -->
+  }
+  init();
+</script>
+</body>
+</html>
