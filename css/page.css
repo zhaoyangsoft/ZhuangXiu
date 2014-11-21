@@ -35,13 +35,19 @@
 	/*z-index: ;*/
 	/*display: none;*/
 }
+.mian_page_01 .animation_tier .pr{
+	width: 100%;
+	height: 100%;
+}
 .mian_page_01 .animation_tier .animation_egg{
 	background: url(../images/index/egg.png) no-repeat right 0;
 	width: 200px;
 	height:260px;
 	/*right: 0;*/
-	left: 977px;
+	/*left: 977px;*/
 	position: absolute;
+	/*left: 0px;*/
+	/*top: 0;*/
 	/*left: 0;*/
 }
 
@@ -132,8 +138,8 @@
 	border: 2px solid rgba(0,170,210,0.8);
 }
 .mian_page_02 .company_mian .company_info{
-	width: 56%;
-	padding-left: 5%;
+	/*width: 56%;
+	padding-left: 5%;*/
 }
 .mian_page_02 .company_mian .company_info .title{
 	font-size: 4em;
@@ -145,10 +151,13 @@
 }
 .mian_page_02 .company_mian .company_info .introduction{
 	padding: 10px 0;
+	font-size: 1.2em;
 }
 .mian_page_02 .company_mian .company_info .introduction p{
-	font-size: 1.4em;
+	font-size: 1em;
 	line-height: 1.8em;
+	text-indent: 2em;
+	margin: 10px 0;
 }
 
 .mian_page_02 .company_mian_case{
@@ -160,13 +169,13 @@
 .mian_page_02 .company_mian_case .title{
 	font-size: 2em;
 	/*line-height: 2em;*/
-	width: 160px;
+	width: 158px;
 	margin: 0 0px 0 0;
 }
 .mian_page_02 .company_mian_case .case_wrap{
 	margin-bottom: 10px;
 	/*  640/840 */
-	width: 80.95238095238095%;
+	width: 81%;
 	overflow: hidden;
 }
 .mian_page_02 .company_mian_case .case_wrap .li{
@@ -189,11 +198,6 @@
 	overflow: hidden;
 	height: 90px;
 	width: 160px;
-/*	max-width: 160px;
-	min-width: 160px;*/
-	/*width: 100%;*/
-	/*border: 1px solid #7e7e7e;*/
-
 }
 .mian_page_02 .company_mian_case .case_wrap .li .link .img{
 	max-width: 160px;
@@ -341,8 +345,14 @@
 	padding: 2% 5%; 
 	color: #fff;
 	background-color: rgba(0,170,210,0.9);
-	background: rgba(0,170,210,0.9);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#E600AAD2', endColorstr='#E600AAD2');
 }
+:root .mian_page_04 .contact{
+	
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#0000AAD2', endColorstr='#0000AAD2');
+	background-color: rgba(0,170,210,0.9);
+}
+
 .mian_page_04 .contact .title{
 	font-size: 3em;
 	line-height: 2em;
@@ -362,6 +372,7 @@
 	max-width: 28%;
 	/*min-width: 80px;*/
 	text-align: right;
+	font-size: 1em;
 }
 .mian_page_04 .contact .contact_wrap .list .info{
 	float: left;
@@ -422,8 +433,49 @@
 
 }
 
+.mian_page_04 .message{
+	position: relative;
+}
+.mian_page_04 .message .list {
 
+}
+.mian_page_04 .message .contact_wrap .list .txt{
+	line-height: 40px;
+	font-size: 1em;
+}
+.mian_page_04 .message .list .info_txt{
+	border: none;
+	background: rgba(255,255,255,0.8);
+	padding: 10px;
+	width: 240px;
+	height: 20px;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	color: #7e7e7e;
 
+}
+.mian_page_04 .message .list textarea.info_txt{
+	min-height: 60px;
+}
+.mian_page_04 .message .info_txt:hover,
+.mian_page_04 .message .info_txt:focus{
+	/*color: #7e7e7e;*/
+	background: rgba(255,255,255,1);
+}
+
+.mian_page_04 .message_wrap .coolbg{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 40px;
+	width: 129px;
+	background: none;
+	cursor: pointer;
+	/*display: block;*/
+}
 
 
 /* 公司简介 */
@@ -431,6 +483,8 @@
 	height: 50px;
 	width: 50px;
 	display: inline-block;
+	+display: inline;
+	+zoom: 1;
 /*	background-color: rgba(0,170,210,0.8);
 	background: rgba(0,170,210,0.8) url(../images/logo_whlite.png) no-repeat center center;*/
 }
@@ -517,6 +571,7 @@
 .monitoring .step .title{
 	font-size: 1.8em;
 	line-height: 2em;
+	font-weight: bold;
 	color: #00aad2;
 	text-align: center;
 	padding: 0 0 20px 0;
@@ -587,6 +642,28 @@
 	padding:30px; 
 }
 
+.monitoring .flow{
+
+}
+.monitoring .flow .title{
+	font-size: 1.8em;
+	line-height: 2em;
+	color: #00aad2;
+}
+.monitoring .flow .detail{
+	font-size: 1.4em;
+	line-height: 1.8em;
+
+}
+.monitoring .flow .step_img{
+	text-align: center;
+	margin: 20px 0;
+}
+
+
+.monitoring .flow .step_img .img{
+	max-width: 1200px;
+}
 
 
 /* 设计师介绍 */
@@ -594,7 +671,7 @@
 
 }
 .designer .designer_list{
-	margin: 20px 0;
+	margin: 20px 0 100px 0;
 }
 .designer .designer_list .list_head{
 	overflow: hidden;
@@ -1067,6 +1144,7 @@
 .mian_page_04 .contact .contact_wrap .list .info,
 .mian_page_04 .contact .message_wrap,
 .mian_page_04 .contact .message_wrap .txt,
+.mian_page_04 .message .info_txt,
 .corporate_info,
 .corporate_info p,
 .monitoring,

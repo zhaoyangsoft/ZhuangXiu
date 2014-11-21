@@ -1,6 +1,15 @@
 // JavaScript Document
 
-
+/**
+* @name		:mianInit
+* @author	:Nice
+* @dependent:总初始化
+*/
+function mianInit(){
+	
+}
+mianInit();
+/* @end **/
 
 
 /**
@@ -62,22 +71,53 @@ function productSwitch(){
 /* @end **/
 
 
-
-
-
-
-
-
 /**
-* @name		:mianInit
+* @name		:messageSwitch
 * @author	:Nice
-* @dependent:总初始化
+* @dependent:留言切换
 */
-function mianInit(){
-	
+function messageSwitch(){
+	var contact=$('#contactUSTier');
+	var message=$('#messageTier');
+
+	function fun(event){
+		console.log(event.data.contact);
+
+		event.data.contact.animate({
+            left:-2000+"px"
+        },1000);
+        setTimeout(function(){
+        	event.data.contact.css({
+        		display: 'none'
+        	});
+        	event.data.message.css({
+	    		left: 2000+'px',
+	    		opacity: 0,
+	    		display: 'block'
+    		});
+    		event.data.message.animate({
+            	left:0,
+            	opacity: 1
+        	},1000);
+        },800);
+        console.log('s');
+	}
+
+	var obj={
+		message:message,
+		contact:contact
+	}
+	// $(e).click(obj,fun);
+	$('#messageBtn').click(obj,fun);
+	// console.log('s');
+	// fun(obj);
 }
-mianInit();
-/* @end **/
+
+
+
+
+
+
 
 
 

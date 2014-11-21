@@ -25,12 +25,10 @@
                         <p class="slogan">我们的宗旨是鸡蛋里挑骨头，让客户们能够体验到完美无暇的舒适感</p>
                         <div class="btn_wrap">
                             <span class="txt">装修案例</span>
-                            {dede:type typeid="6"}
-                            <a href="[field:typelink /]" class="more cpr">
+                            <a href="index.php#companyInfo" class="more cpr">
                                 GO
                                 <span class="icon_chevron_circle_right"></span>
                             </a>
-                            {/dede:type}
                         </div>
                    </div>
                 </div>
@@ -41,23 +39,27 @@
             <div class="section mian_page_02">
                 <div class="wrap1200 pr">
                     <div class="company_mian">
-                        <div id="dituContent" class="map fl "></div>
+                        <!-- <div id="dituContent" class="map fl "></div> -->
                         
-                        <div class="company_info fr">
+                        <div class="company_info">
                             
                             <h1 class="title">{dede:global.cfg_webname/}</h1>
                             <div class="introduction">
-                            
-                            
+<!--                             {dede:sql sql='Select description from zx_arctype where id=4'}
+    [field:description /]
+{/dede:sql} -->
+                                <p>吴松装饰是一家集设计、施工、服务为一体的专业型装饰公司。公司一惯于追求一流的品质，提供卓越的服务。</p>
+                                <p>公司坚持“绿色、自然、健康”的环保理念，以“质量为生存，信誉求发展”的企业宗旨，倡导“优质施工，诚信服务，自我规范，持续经营”。以“做精品工程，创名牌企业”为企业目标，精心挑选施工工匠，严格规范施工流程和施工行为，实施险种质量监控：不断引进优秀管理人才和技术人才，运用自己独特的管理模式，构建企业的“诚信竟争力”，不断追求顾客满意度，持续提升企业介值。以新颖独特的设计风格，精湛的施工工艺和优良的质量信誉保证，打造质量可靠的“吴松”品牌。</p>
+                                <p>我们相信装饰市场正呼换着一个个“诚信”品牌的诞生，诚以动人，信以至远。先装修后付款，我们本着诚信的态度服务客户，请您鸡蛋里挑骨头！</p>
+                                <p>所谓“一诺千金”，“吴松”实创的目标是企业的永续经营，所以对“吴松”实创而言，诚信必须是血液中流动的永不变异的遗传基因。对同仁诚信、对业主诚信、对供应商诚信、对社会诚信。做企业首先是做人。在“吴松”实创看来，做人做企业的第一要义都在于诚信。对于一个人来讲，诚信赢得尊重、赢得信任、赢得爱戴；而对于一个企业而言，诚信赢得支持、赢得客户、赢得市场；只有以诚信的理念面对经营，才能赢得永续的生存。</p>
+                                <p>吴松装饰的设计理念一切以客户需求为主，分为，精装与简装，设计专业细致，专业知识丰富，可以根据业主的预算、要求合理搭配材料、设计造型，确保业主的装修满意度。报价实在秀明：公司直接管理工人的模式，也就是说产，公司与工人是一个团体，省下了中间的转包成本，公司直接从，总经销商处配货及拥有自己的配送车辆，节省了中间的费用；所以报价实在。</p>
                             </div>
                            
-                            {dede:type typeid='1'}
-                            <a href="[field:typeurl/]" class="mod_btn ext_btn_tr" target="_blink">
+                            
+                            <a href="index.php#contact" class="mod_btn ext_btn_tr">
                                <span class="icon_chevron_circle_right"></span>
                                <span class="txt">联系我们</span>
                             </a>
-                            {/dede:type}
-                            
                             
                         </div>
                         
@@ -90,41 +92,33 @@
                     <ul class="advantage_wrap">
                         <li class="list">
                             <span class="icon_paintcan"></span>
-                             {dede:channelartlist typeid="3"}
-                            <h1 class="title">{dede:field name=description function=html2text(@me)/}</h1>
-                            <p class="info visible_desktop">
-                            </p>
-                            <a href="[field:typelink /]" class="mod_btn more">
+                            {dede:type typeid='3'}
+                            <h1 class="title">[field:typename/]</h1>
+                            <p class="info visible_desktop">我们公司贯彻先装修再付款的理念，让客户觉得满意了再付款。</p>
+                            <a href="[field:typeurl/]" class="mod_btn more">
                                 <span class="icon_plus"></span>
                                 <span class="txt">查看更多</span>
                             </a>
-                            {/dede:channelartlist}
+                            {/dede:type}
                         </li>
                         <li class="list list_fr">
                             <span class="icon_users"></span>
-                            <h1 class="title">全员监理</h1>
+                            {dede:type typeid='4'}
+                            <h1 class="title">[field:typename/]</h1>
+                            {/dede:type}
                             <p class="info visible_desktop">
-                            
-                          <!--   {dede:sql sql="SELECT content FROM zx_arctype where id=3" infolen="760"}
-                            [field:description function="cn_substr(@me)'/]
-                            {/dede:sql} -->
- 
-    
+                            在使用独一无二的先装修后付款的模式下，为了让客户能够满意付款，吴松装饰形成了创新型的监理系统。
 
-　　{dede:channel typeid='3' type='son'}
-　[field:description/]
+<!-- {dede:sql sql="select * From zx_archives limit 10"}
+·[field:title/]
 
-
-
-　　{/dede:channel}
-
-{dede:channelartlist typeid="3"}
-
-{/dede:channelartlist}
-    
-    
-    
-    
+{/dede:sql} -->
+<!-- {dede:sql sql='Select description from zx_arctype where id=4'}
+    [field:description /]
+{/dede:sql}
+{dede:list typeid='4' }
+[field:description function='cn_substr(@me,500)'/]
+{/dede:list} -->
                             </p>
                             {dede:type typeid='4'}
                             <a href="[field:typeurl/]" class="mod_btn more" target="_blink">
@@ -135,9 +129,11 @@
                         </li>
                         <li class="list">
                             <span class="icon_pen"></span>
-                            <h1 class="title">设计师介绍</h1>
-                            <p class="info visible_desktop">我们公司贯彻先装修再付款的理念，让客户觉得满意了再付款。</p>
                             {dede:type typeid='5'}
+                            <h1 class="title">[field:typename/]</h1>
+                            <p class="info visible_desktop">
+                            设计源于生活，<br>
+                            生活赋予设计。</p>
                             <a href="[field:typeurl/]" class="mod_btn more" target="_blink">
                                 <span class="icon_plus "></span>
                                 <span class="txt">查看更多</span>
@@ -146,9 +142,9 @@
                         </li>
                         <li class="list list_fr">
                             <span class="icon_pictures"></span>
-                            <h1 class="title">装修案例</h1>
-                            <p class="info visible_desktop">我们公司贯彻先装修再付款的理念，让客户觉得满意了再付款。</p>
                             {dede:type typeid='6'}
+                            <h1 class="title">[field:typename/]</h1>
+                            <p class="info visible_desktop">为您设计或装修的时候提供最全最好的案例参考。</p>
                             <a href="[field:typeurl/]" class="mod_btn more" target="_blink">
                                 <span class="icon_plus "></span>
                                 <span class="txt">查看更多</span>
@@ -166,7 +162,7 @@
             
             <!-- 第四屏[[ -->
             <div class="section mian_page_04">
-                <div class="wrap1200 pr ">
+                <div class="wrap1200 pr" id="contactUSTier">
                    <div class="contact">
                     <h1 class="title">联系我们</h1>
                     <ul class="contact_wrap">
@@ -207,13 +203,61 @@
                         </li>
                     </ul>
                    </div>
-                    <div class="message_wrap">
+
+                   <div class="message_wrap">
                         <span class="txt">给我们留言</span>
-                        <a href="#" class="btn fr">
+                        <a onclick="" class="btn fr" id="messageBtn">
                             留言<span class="icon_chevron_circle_right"></span>
                         </a>
                     </div>
+
                 </div>
+
+                <div class="wrap1200 pr none" id="messageTier">
+                  <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+                    <div class="contact message">
+                      <h1 class="title">留言</h1>
+ 
+                        <input type="hidden" name="action" value="post">
+                        <input type="hidden" name="diyid" value="1">
+                        <input type="hidden" name="do" value="2">
+
+                        <ul class="contact_wrap">
+                          <li class="list">
+                              <span class="txt">联系人：</span>
+                              <input type="text" name="name" id="name" class="info_txt" value="">
+                              <div class="clear"></div>
+                          </li>
+
+                          <li class="list">
+                              <span class="txt">电子邮箱：</span>
+                              <input type="text" name="phone" id="phone" class="info_txt" value=""> 
+                              <div class="clear"></div>
+                          </li>
+                          <li class="list">
+                              <span class="txt">留言内容：</span>
+                              <textarea name="content" id="content" class="info_txt"></textarea>
+                              <div class="clear"></div>
+                          </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="message_wrap">
+                        <span class="txt"></span>
+                        <a class="btn fr pr">
+                            提交<span class="icon_chevron_circle_right"></span>
+                            <input type="submit" name="submit" value="" class="coolbg">
+                        </a>
+                        
+                    </div>
+
+                    <input type="hidden" name="dede_fields" value="name,text;phone,int;content,multitext">
+                    <input type="hidden" name="dede_fieldshash" value="48936c4929123c509654cd40e61051ce">
+                    </form>
+                </div>
+
+
             </div>
             <!-- 第四屏[[ -->
             
@@ -222,7 +266,7 @@
         
 {dede:include filename="footer.htm"/}
 <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/lib/jquery.fullPage.min.js"></script>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script> -->
 
 <script type="text/javascript">
   //初始化 统一入口
@@ -238,12 +282,17 @@
     });
     
     //百度地图
-    initMap();
-            
+    // initMap();
+
+    //留言切换
+    messageSwitch();
+
+
     //图片放大效果
     baguetteBox.run('.baguetteBoxOne', {
       animation: 'fadeIn',
     });
+
   }
   init();
 </script>

@@ -27,7 +27,9 @@ $z[11][4]['channelid']="21";
 $z[11][4]['addfields']="body";
 $z[11][4]['orderby']="pubdate";
 $z[11][4]['order']="asc";
-$z[12]=Array("include","",2184,2221);
-$z[12][4]['filename']="footer.htm";
+$z[12]=Array("global","",2210,2235);
+$z[12][4]['name']="cfg_cmsrul";
+$z[13]=Array("include","",2359,2396);
+$z[13][4]['filename']="footer.htm";
 
 ?>
