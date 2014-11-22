@@ -36,7 +36,9 @@ $z[14]=Array("arclist","\r\n                   <li class=\"list\">\r\n          
 $z[14][4]['typeid']="9";
 $z[14][4]['channelid']="20";
 $z[14][4]['addfields']="imgbig";
-$z[15]=Array("include","",4109,4146);
-$z[15][4]['filename']="footer.htm";
+$z[15]=Array("global","",4143,4168);
+$z[15][4]['name']="cfg_cmsrul";
+$z[16]=Array("include","",4292,4329);
+$z[16][4]['filename']="footer.htm";
 
 ?>

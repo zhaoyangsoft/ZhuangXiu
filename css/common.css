@@ -159,6 +159,12 @@ a:link,a:visited,a:active{
 	margin: 0 auto;
 	overflow: visible;
 }
+.w_min1200{
+/*	min-width: 1200px;
+	position: absolute;*/
+}
+
+
 
 .mod_btn{
 	display: block;

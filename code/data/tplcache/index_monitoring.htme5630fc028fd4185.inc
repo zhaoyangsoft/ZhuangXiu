@@ -22,7 +22,9 @@ $z[9]=Array("field","",1167,1188);
 $z[9][4]['name']="content";
 $z[10]=Array("global","",4559,4591);
 $z[10][4]['name']="cfg_templets_skin";
-$z[11]=Array("include","",4954,4991);
-$z[11][4]['filename']="footer.htm";
+$z[11]=Array("global","",4990,5015);
+$z[11][4]['name']="cfg_cmsrul";
+$z[12]=Array("include","",5139,5176);
+$z[12][4]['filename']="footer.htm";
 
 ?>

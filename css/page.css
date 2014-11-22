@@ -30,8 +30,11 @@
 	/*height: 100%;*/
 	height: 644px;
 	position: absolute;
-	left: -600px;
-	top: 0;
+	/*left: -600px;*/
+	right:66%;
+	/*left: -50%;*/
+	/*min-left: */
+	top: -100px;
 	/*z-index: ;*/
 	/*display: none;*/
 }
@@ -43,11 +46,11 @@
 	background: url(../images/index/egg.png) no-repeat right 0;
 	width: 200px;
 	height:260px;
-	/*right: 0;*/
+	right: -20px;
 	/*left: 977px;*/
 	position: absolute;
 	/*left: 0px;*/
-	/*top: 0;*/
+	top: 82px;
 	/*left: 0;*/
 }
 
@@ -303,7 +306,6 @@
 	right: 0;
 	margin: 0 auto;
 	display: block;
-	
 }
 .mian_page_03 .advantage .animation_tier{
 	background: url(../images/index/hand_b.png) no-repeat;
@@ -551,15 +553,6 @@
 
 
 
-
-
-
-
-/*monitoring*/
-
-
-
-
 /* 全员监控 */
 .monitoring{
 	/*padding: 40px 0;*/
@@ -586,10 +579,22 @@
 .monitoring .step .content_step .wrap .list{
 	list-style-type: decimal;
 	/*list-style-position:inside;*/
-	width: 48%;
-	margin: 0 0 0 2%;
+	width: 36%;
+	/*max-width: 400px;*/
+	margin: 0 12% 0 2%;
 	float: left;
 	font-size: 1.6em;
+	clear: left;
+}
+.monitoring .step .content_step .wrap .list:nth-child(2n){
+	clear: right;
+	float: right;
+	margin: 0 0 0 14%;
+}
+.monitoring .step .content_step .wrap .list_2n{
+	clear: right;
+	float: right;
+	margin: 0 0 0 14%;
 }
 .monitoring .step .content_step .wrap .list .title_h4{
 	font-size: 1em;
@@ -663,6 +668,7 @@
 
 .monitoring .flow .step_img .img{
 	max-width: 1200px;
+	width: 100%;
 }
 
 
@@ -863,7 +869,9 @@
 	margin: 0 0 30px 75px;
 }
 
-.product .product_lists .list:nth-child(3n+1),
+.product .product_lists .list:nth-child(3n+1){
+	margin: 0;
+}
 .product .product_lists .clear_ml{
 	margin: 0;
 }
@@ -1006,6 +1014,17 @@
 		padding:0px;
 		overflow: hidden;
 	}
+
+	.monitoring .step .content_step .wrap .list,
+	.monitoring .step .content_step .wrap .list_2n{
+		width:80%;
+		margin: 0 10%;
+	}
+	.monitoring .step .content_step .wrap .list:nth-child(2n){
+		width:80%;
+		margin: 0 10%;
+	}
+
 }
 
 /* 界于水平手机与竖直平板之间 */
@@ -1037,6 +1056,9 @@
 		padding: 0;
 	}
 
+	.mian_page_01 .animation_tier{
+		display: none;
+	}
 	.mian_page_01 .wrap{
 		margin: 0 20%;
 	}
@@ -1056,6 +1078,18 @@
 		max-height: 120px;
 		overflow: hidden;
 	}
+
+	.monitoring .step .content_step .wrap .list,
+	.monitoring .step .content_step .wrap .list_2n{
+		width:80%;
+		margin: 0 10%;
+	}
+
+	.monitoring .step .content_step .wrap .list:nth-child(2n){
+		width:80%;
+		margin: 0 10%;
+	}
+
 
 }
 
@@ -1156,6 +1190,7 @@
 .monitoring .step .content_step .wrap .list .detailed,
 .monitoring .step .loop,
 .monitoring .step .loop .circle,
+.monitoring .flow .step_img,
 .designer .designer_list .list_head .phonto_border .phonto,
 .product .product_nav .list,
 .product .product_nav .list .title,
