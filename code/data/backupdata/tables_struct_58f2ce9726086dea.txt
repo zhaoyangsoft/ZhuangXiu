@@ -19,6 +19,7 @@ CREATE TABLE `zx_addoncase` (
   `redirecturl` varchar(255) NOT NULL default '',
   `templet` varchar(30) NOT NULL default '',
   `userip` char(15) NOT NULL default '',
+  `imgbig` varchar(200) NOT NULL default '',
   PRIMARY KEY  (`aid`),
   KEY `typeid` (`typeid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -35,6 +36,19 @@ CREATE TABLE `zx_addoncompanyinfo` (
   KEY `typeid` (`typeid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+DROP TABLE IF EXISTS `zx_addondecorate_payment`;
+
+CREATE TABLE `zx_addondecorate_payment` (
+  `aid` int(11) NOT NULL default '0',
+  `typeid` int(11) NOT NULL default '0',
+  `redirecturl` varchar(255) NOT NULL default '',
+  `templet` varchar(30) NOT NULL default '',
+  `userip` char(15) NOT NULL default '',
+  `body` mediumtext,
+  PRIMARY KEY  (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
 DROP TABLE IF EXISTS `zx_addondesigner`;
 
 CREATE TABLE `zx_addondesigner` (
@@ -43,6 +57,12 @@ CREATE TABLE `zx_addondesigner` (
   `redirecturl` varchar(255) NOT NULL default '',
   `templet` varchar(30) NOT NULL default '',
   `userip` char(15) NOT NULL default '',
+  `name` char(100) NOT NULL default '',
+  `datebirth` varchar(100) NOT NULL default '',
+  `school` varchar(100) NOT NULL default '',
+  `professional` char(100) NOT NULL default '',
+  `concept` mediumtext,
+  `img` varchar(200) NOT NULL default '',
   PRIMARY KEY  (`aid`),
   KEY `typeid` (`typeid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -97,6 +117,18 @@ CREATE TABLE `zx_addoninfos` (
   PRIMARY KEY  (`aid`),
   KEY `typeid` (`typeid`,`nativeplace`,`infotype`),
   KEY `channel` (`channel`,`arcrank`,`mid`,`click`,`title`,`litpic`,`senddate`,`flag`,`endtime`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `zx_addonmonitoring`;
+
+CREATE TABLE `zx_addonmonitoring` (
+  `aid` int(11) NOT NULL default '0',
+  `typeid` int(11) NOT NULL default '0',
+  `redirecturl` varchar(255) NOT NULL default '',
+  `templet` varchar(30) NOT NULL default '',
+  `userip` char(15) NOT NULL default '',
+  PRIMARY KEY  (`aid`),
+  KEY `typeid` (`typeid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `zx_addonshop`;
@@ -456,6 +488,17 @@ CREATE TABLE `zx_co_urls` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `hash` varchar(32) NOT NULL default '',
   `nid` smallint(5) unsigned NOT NULL default '0',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `zx_diyform_message`;
+
+CREATE TABLE `zx_diyform_message` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `ifcheck` tinyint(1) NOT NULL default '0',
+  `name` varchar(100) NOT NULL default '',
+  `phone` int(11) NOT NULL default '0',
+  `content` mediumtext,
   PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 

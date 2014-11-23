@@ -13,7 +13,9 @@ $z[5]=Array("global","",700,732);
 $z[5][4]['name']="cfg_templets_skin";
 $z[6]=Array("global","",986,1018);
 $z[6][4]['name']="cfg_templets_skin";
-$z[7]=Array("global","",1336,1368);
+$z[7]=Array("global","",1357,1389);
 $z[7][4]['name']="cfg_templets_skin";
+$z[8]=Array("global","",1587,1619);
+$z[8][4]['name']="cfg_templets_skin";
 
 ?>
