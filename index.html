@@ -278,7 +278,7 @@
               </li>
 
               <li class="list">
-                <span class="txt">电子邮箱：</span>
+                <span class="txt">联系电话：</span>
                 <input type="text" name="phone" id="phone" class="info_txt" value="" />
                 <div class="clear"></div>
               </li>
@@ -292,8 +292,8 @@
 
           <div class="message_wrap">
             <span class="txt"></span>
-            <a class="btn fr pr">
-              提交<span class="icon_chevron_circle_right"></span>
+            <a class="btn fr pr" onclick="javasciprt:sumitUser()">
+              提交2<span class="icon_chevron_circle_right"></span>
               <input type="submit" name="submit" value="" class="coolbg" />
             </a>
           </div>
@@ -385,4 +385,23 @@
       <script type="text/javascript" src="js/hack/font-ie7.js"></script>
     <![endif]-->
   </body>
+  <script>
+    function sumitUser() {
+      const name = $('#name').val();
+      const phone = $('#phone').val();
+      const content = $('#content').val();
+
+      const reqURI = `http://changge001.com:3002/api/user/add?name=${name}&phone=${phone}&desc=${content}`;
+      fetch(reqURI)
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(myJson) {
+          console.log('myJson', myJson);
+          alert(myJson.message);
+          alert('【我们会尽快联系您】');
+          alert('或者您直接现在拨打电话过来 【18368194229】');
+        });
+    }
+  </script>
 </html>
