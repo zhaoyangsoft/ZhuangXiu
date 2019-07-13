@@ -1,4 +1,0 @@
-INSERT INTO `zx_addoncase` VALUES('2','7','','','192.168.1.106','/uploads/141120/1-1411201U300112.jpg');
-INSERT INTO `zx_addoncase` VALUES('3','8','','','192.168.1.106','/uploads/141121/1-141121060KTc.jpg');
-INSERT INTO `zx_addoncase` VALUES('4','9','','','192.168.1.106','/uploads/141121/1-141121060945251.jpg');
-INSERT INTO `zx_addoncase` VALUES('5','9','','','192.168.1.106','/uploads/141121/1-141121060945251.jpg');

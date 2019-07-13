@@ -1,1 +1,0 @@
-<a class="list" href="[field:typelink/]">[field:typename/]</a>

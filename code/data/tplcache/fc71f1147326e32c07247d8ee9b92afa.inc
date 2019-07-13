@@ -1,1 +1,0 @@
-<li class="li"><a href="#" class="link"><img src="[field:image/]" alt="" class="img"></a></li>

@@ -1,4 +1,0 @@
-
-                            {dede:field.description/}
-                            </div>
-                            
