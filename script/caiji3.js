@@ -7,7 +7,7 @@ const phantom = require('phantom');
     console.info('Requesting', requestData.url);
   });
 
-  const status = await page.open('http://www.baidu.com');
+  const status = await page.open('http://zx.changge001.com');
   const content = await page.property('content');
   console.log(content);
 
