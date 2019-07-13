@@ -14,7 +14,7 @@ const htmlTag = 'img';
 const htmlAttr = 'src';
 
 //定义常量
-var filePrefix = 'http://demo221.ym79.com';
+var filePrefix = 'http://demo221.ym79.com/al';
 // Step2 打开Top 3 的文章； copy html 内容，
 //数据请求
 async function dataRequest(dataUrl) {
