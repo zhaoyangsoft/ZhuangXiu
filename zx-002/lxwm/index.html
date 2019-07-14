@@ -26,6 +26,151 @@ window.mfn_sliders = {blog:0,clients:0,offer:0,portfolio:0,shop:0,slider:0,testi
 .hide-btn{
 	display:none!important; 
 }
+#Content{
+	padding: 40px!important;
+	color: white;
+	text-align: center;
+	background-color: #eae9e9;
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
+}
+#Content .message{
+	width: 400px;
+    margin: 0 auto;
+}
+#Content .title{
+	color: white;
+}
+#Content .contact{
+	
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#0000AAD2', endColorstr='#0000AAD2');
+	background-color: rgba(0,170,210,0.9);
+}
+
+#Content .contact .title{
+	padding-top: 20px;
+	font-size: 2em;
+	line-height: 1em;
+}
+#Content .contact .contact_wrap{
+
+}
+#Content .contact .contact_wrap .list{
+	/*overflow: hidden;*/
+	font-size: 1.4em;
+	line-height: 1.5em;
+	margin: 10px 0;
+}
+#Content .contact .contact_wrap .list .txt{
+	float: left;
+	width: 120px;
+	max-width: 28%;
+	/*min-width: 80px;*/
+	text-align: right;
+	font-size: 1em;
+}
+#Content .contact .contact_wrap .list .info{
+	float: left;
+	width: 260px;
+	max-width: 72%;
+	/*min-width: 320px;*/
+}
+
+
+#Content .contact_wrap .qr_wechat .qr_wechat_img{
+	top: -30px;
+}
+
+#Content .message_wrap{
+	width: 80%;
+	max-width: 340px;
+	padding: 0 0 0 10%;
+	margin: 10px auto 0 auto;
+	text-align: right;
+}
+#Content .message_wrap .txt{
+	font-size: 1.4em;
+	line-height: 40px;
+}
+
+#Content .message_wrap .btn{
+	/*padding: 0 10px;*/
+	font-size: 1.4em;
+	background: url(../images/btn_more.png) no-repeat 0 0;
+	width: 129px;
+	height: 40px;
+	display: inline-block;
+	line-height: 38px;
+	text-align: center;
+	font-size: 1.4em;
+	color: #fff;
+	-webkit-transition:text-shadow .4s ease-out;
+	-moz-transition:text-shadow .4s ease-out;
+	-ms-transition:text-shadow .4s ease-out;
+	-o-transition:text-shadow .4s ease-out;
+	transition:text-shadow .4s ease-out;
+}
+#Content .message_wrap .btn span{
+	padding:0 0 0 4px;
+	display: inline-block;
+}
+#Content .message_wrap .btn:hover{
+	text-shadow:0px -1px 0px #000;
+	background-position:0 -80px;
+}
+
+
+#Content .contact:hover{
+	background-color: rgba(0,170,210,1);
+	background: rgba(0,170,210,1);
+
+}
+
+#Content .message{
+	position: relative;
+}
+#Content .message .list {
+
+}
+#Content .message .contact_wrap .list .txt{
+	line-height: 40px;
+	font-size: 1em;
+}
+#Content .message .list .info_txt{
+	border: none;
+	background: rgba(255,255,255,0.8);
+	padding: 10px;
+	width: 240px;
+	height: 30px;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	color: #7e7e7e;
+
+}
+#Content .message .list textarea.info_txt{
+	min-height: 60px;
+}
+#Content .message .info_txt:hover,
+#Content .message .info_txt:focus{
+	/*color: #7e7e7e;*/
+	background: rgba(255,255,255,1);
+}
+
+#Content .message_wrap .coolbg{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 40px;
+	width: 129px;
+	background: none;
+	cursor: pointer;
+	/*display: block;*/
+}
+
+
 img.wp-smiley,
 img.emoji {
 	display: inline !important;
@@ -108,7 +253,7 @@ html{background-image:url(http://localhost:3303/skin/images/productbg.jpg);backg
 						<nav id="menu" class="menu-main-menu-container">
 						<ul id="menu-main-menu" class="menu">
 							<li class='menu-item menu-item-type-post_type menu-item-object-page menu-item-home  page_item page-item-83'><a href="/"><span>首页</span></a></li>
-							<li class=" menu-item menu-item-type-custom current-menu-item menu-item-object-custom menu-item-has-children"><a href="/gy/"><span>关于</span></a>
+							<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="/gy/"><span>关于</span></a>
 								<ul class="sub-menu">
 									
 								<li class="menu-item menu-item-type-post_type menu-item-object-page "><a href="/gy/"><span>公司简介</span></a></li>
@@ -136,7 +281,7 @@ html{background-image:url(http://localhost:3303/skin/images/productbg.jpg);backg
 								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/al"><span>餐厨空间</span></a></li>
 									
 								</ul>
-							</li><li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="/lxwm/"><span>联系我们</span></a>
+							</li><li class="current-menu-item  menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="/lxwm/"><span>联系我们</span></a>
 								
 									
 								
@@ -167,7 +312,39 @@ html{background-image:url(http://localhost:3303/skin/images/productbg.jpg);backg
 		<div class="content_wrapper clearfix">
 			<!-- .sections_group -->
 			<div class="sections_group">
-			联系我们
+				<div class="contact message">
+					<h1 class="title">留言 【我们联系您】</h1>
+					<span style="color:#e6ae48;font-size:12px;font-weight: 800;">留言即可参加抽奖</span><span style="color:#ccc;font-size:12px"> (打蛋器、电饭煲、烘干一体洗衣机 等)</span>
+		
+					<!-- <input type="hidden" name="action" value="post">
+								<input type="hidden" name="diyid" value="1">
+								<input type="hidden" name="do" value="2"> -->
+		
+					<ul class="contact_wrap">
+					  <li class="list">
+						<span class="txt">联系人：</span>
+						<input type="text" name="name" id="name" class="info_txt" value="">
+						<div class="clear"></div>
+					  </li>
+		
+					  <li class="list">
+						<span class="txt">联系电话：</span>
+						<input type="text" name="phone" id="phone" class="info_txt" value="">
+						<div class="clear"></div>
+					  </li>
+					  <li class="list">
+						<span class="txt">留言内容：</span>
+						<textarea name="content" id="content" class="info_txt"></textarea>
+						<div class="clear"></div>
+					  </li>
+					  <li>
+						<a class="btn fr pr" onclick="javasciprt:sumitUser()">
+							<input type="submit" name="submit" value="提交留言 并 参加抽奖" class="coolbg" />
+						  </a>
+					  </li>
+					</ul>
+					
+				  </div>
 			</div>
 			<!-- .four-columns - sidebar -->
 		</div>
@@ -254,7 +431,7 @@ html{background-image:url(http://localhost:3303/skin/images/productbg.jpg);backg
 						<span style="color: #1a1a1a;">Copyright &copy; 2019 长葛格林装修公司 版权所有</span>
 					</p>
 					<p style="text-align: center;">
-						<span style="color: #1a1a1a;"><a style="color: #1a1a1a;" href="http://www.miitbeian.gov.cn/" target="_blank" shape="rect">ICP备*********号</a></span>
+						<span style="color: #1a1a1a;"><a style="color: #1a1a1a;" href="http://www.miitbeian.gov.cn/" target="_blank" shape="rect">豫ICP备19004233号-1</a></span>
 					</p>
 					<hr size="1" width="60%"/>
 					<p style="text-align: center;">
@@ -303,4 +480,26 @@ html{background-image:url(http://localhost:3303/skin/images/productbg.jpg);backg
 	<script type='text/javascript' src='http://localhost:3303/wp-includes/js/comment-reply.min.js'></script>
 	<script type='text/javascript' src='http://localhost:3303/wp-includes/js/wp-embed.min.js'></script>
 	</body>
+
+	<script>
+	
+		function sumitUser() {
+		  const name = jQuery('#name').val();
+		  const phone = jQuery('#phone').val();
+		  const content = jQuery('#content').val();
+	
+		  const reqURI = `http://changge001.com:3002/api/user/add?name=${name}&phone=${phone}&desc=${content}`;
+		  fetch(reqURI)
+			.then(function(response) {
+			  return response.json();
+			})
+			.then(function(myJson) {
+			  console.log('myJson', myJson);
+			  alert(myJson.message);
+			  alert('【我们会尽快联系您】');
+			  alert('或者您直接现在拨打电话过来 【18368194229】');
+			});
+		}
+	  </script>
+
 	</html>
