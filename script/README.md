@@ -15,5 +15,9 @@ cdn.js 打开本地 CDN 地址，使用 caijiNeiRong 目录线的内容;
    ```
     node ./script/app-002.js
    ```
+   > （启动长葛第一生活网首页）
+   ```
+    node ./script/app-cg001.js
+   ```
 2. 启动 cdn
    node ./script/cdn.js
